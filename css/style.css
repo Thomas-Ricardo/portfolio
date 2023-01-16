@@ -1,0 +1,487 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.img-perfil{
+    border-radius: 300px;
+}
+.bg-primary-color {
+    background-color: rgba(255, 255, 255, 0.900);
+    padding: 0;
+}
+.bg-secondary-color {
+    background-color: #ece0ea;
+}
+.bg-dark-color {
+    background-color: #050505;
+}
+.primary-color {
+    color: #050505;
+}
+.secondary-color {
+    color: #7a7a7a;
+}
+
+/* NAVBAR */
+#navbar {
+    border-bottom: 1px solid #7a7a7a;
+}
+#navbar a span {
+    font-weight: 600;
+    color: #000000;
+}
+#navbar a {
+    font-weight: 800;
+    color: #09a934;
+}
+#navbar a:hover {
+    color: #9acd32;
+    border-bottom:  1px solid #050505;
+}
+#navbar-brand {
+    display: flex;
+}
+#navbar-brand img {
+    width: 50px;
+ }
+ #navbar-brand span {
+     font-weight: 700;
+     font-size: 1.5rem;
+     margin-left: 0.5rem;
+ }
+ #navbar-items .navbar-nav {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+ }
+ #navbar-items .nav-item {
+     margin: 0.2rem;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    overflow: hidden;
+    padding: 0;
+}
+
+/* SLIDER */
+#slider {
+    margin-top: 10rem;
+    margin-bottom: 1rem;
+}
+#slider .carousel-caption {
+    bottom: 3rem;
+}
+
+#slider .carousel-caption h5 {
+    margin-top: 1rem;
+    font-size:  5rem;
+    text-shadow:  #000 2px 3px;
+}
+.btn {
+    border-radius: 0;
+}
+#slider .btn {
+    padding: 0.3 0.8rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+.carousel-control-prev i,
+.carousel-control-next i {
+    color: #ece0ea;
+    font-size: 3rem;
+}
+.carousel-indicators [data-bs-target] {
+    background-color:#7a7a7a;
+    opacity: 0.8;
+}
+.carousel-indicators .active {
+    background-color: #d0ff25;
+}
+
+/* ABOUT */
+.about .col-12 h2 {
+    text-shadow:  #000 0.5px 1px;
+}
+.about p {
+    font-size: 1.8rem;
+    line-height: 150%;
+}
+.about .col-12 a{
+    padding: 0.5 1.5rem;
+    font-size: 1.5rem;    
+}
+.about .col-12 a:hover {
+    background-color: #343434;
+}
+#info-content {
+    padding: 3rem;
+}
+.bg-secondary-color {
+    background-color:#7a7a7a31 ;
+}
+
+/* Projects */
+#projects {
+    display: flex;
+    padding: 0rem;
+}
+#projects .project{
+    width: 100%;
+}
+#projects .col-6{
+    padding: 0rem;
+    border: 0.1px solid #464545;
+}
+#projects #comentario {
+    color: #000000;
+    pointer-events: none;
+    font-weight: 900;
+    font-size: 0.9rem;
+    top: 45%;
+    left: 25%;
+    right: 25%;
+}
+#projects img:hover, #projects #comentario:hover {
+    opacity: 0.2;
+    content: "";
+    transition: 0.4s;
+}
+#foto  {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+}
+
+#foto a {
+    text-decoration: none;
+}
+   #comentario {
+    position:absolute; 
+    top: 50%;
+    left: calc(50% - 736px/5);
+    background: transparent;
+    color:#fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    text-align: center;
+   }
+   
+   #foto:hover  #comentario{
+         opacity: 1;
+   }
+
+/* Soft skills section styling */
+.soft {
+    max-width: flex;
+}
+.soft, .teams{
+    color:#fff;
+    background: #111;
+}
+.soft .title {
+    text-align: left;
+    padding: 1.4rem;
+
+}
+.soft .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.soft .title::after,
+.teams .title::after{
+    background: #111;
+    content: " com isso posso agregar em sua empresa:";
+}
+.soft .soft-content .card{
+    margin: 0.8rem auto;
+    width: calc(100% - 30px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2.1rem 1.6rem;
+    transition: all 0.3s ease;
+}
+.soft .soft-content .card:hover{
+    background: rgba(0, 238, 255, 0.103);
+    border: #797979 solid 1px;
+    color: #FFFFFF;
+}
+.soft .soft-content .card .box{
+    transition: all 0.2s ease;
+}
+.soft .soft-content .card:hover .box{
+    transform: scale(1.15);
+}
+.soft .soft-content .card i{
+    font-size: 4rem;
+    transition: color 0.3s ease;
+}
+.soft .soft-content .card:hover i{
+    color: #d0ff25;
+}
+.soft .soft-content .card .text{
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 0.7rem 0rem 0.4rem 0rem;
+}
+
+/* Hard skills section styling */
+.hard {
+    background-color: #fff;
+    max-width: flex;
+}
+.hard .max-width .title {
+    color: rgb(0, 0, 0);
+    margin: 2rem 0;
+}
+.hard .title::after{
+    content: " as tecnologias que utilizo: ";
+}
+.hard .HSkills-content .column{
+    max-width: flex;
+}
+.hard .HSkills-content .left .text{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+.hard .HSkills-content .left p{
+    text-align: center;
+    margin-bottom: 7rem;
+    line-height: 5vh;
+}
+.hard .HSkills-content .right .bars{
+    margin-top: 1rem;
+    padding: 0.3rem;
+}
+.hard .HSkills-content .right .info{
+    display: flex;
+    margin-bottom: 0.3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.hard .HSkills-content .right span{
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 2.3rem;
+}
+.hard .HSkills-content .right .line{
+    height: 1rem;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+    border-radius: 20px;
+}
+.hard .HSkills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #d0ff25, #83a117, #262f07);
+}
+.HSkills-content .right .html::before{
+    width: 90%;
+}
+.HSkills-content .right .css::before{
+    width:75%;
+}
+.HSkills-content .right .js::before{
+    width: 40%;
+}
+.HSkills-content .right .git::before{
+    width: 50%;
+}
+.HSkills-content .right .github::before{
+    width: 50%;
+}
+.HSkills-content .right .mysql::before{
+    width: 60%;
+}
+.HSkills-content .right .php::before {
+    width: 90%;
+}
+.HSkills-content .right .wordpress::before {
+    width: 90%;
+}
+.HSkills-content .right .react::before{
+    width: 40%;
+}
+.HSkills-content .right .node::before{
+    width: 20%;
+}
+.HSkills-content .right .reactnative::before{
+    width: 20%;
+}
+.HSkills-content .right .linux::before{
+    width: 20%;
+}
+.lv {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Footer section styling */
+footer{
+    background: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: -75px;
+    margin-top: 4em;
+    
+}
+footer span a{
+    width: 10em;
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+.love {
+    display:inline-block;
+    position:relative;
+    top:.1em;
+    font-size:1.8em;
+    color:#d0ff25;
+    transform:scale(.9);
+    animation:love .5s linear infinite alternate-reverse;
+   }
+h3 {
+    font-size: 15px;
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+    margin-top: -8px;
+    margin-bottom: 8px;
+}
+.center {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+    width: 100%;
+    background-color: #202121;
+    text-align: center;
+    margin-bottom: -33px;
+    margin-top: 30px;
+}
+.icon {
+    width: 70px;
+    height: 70px;
+    margin: -14px;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+.icon-center {
+    width: 50px;
+}
+.bi-linkedin {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.bi-linkedin:hover {
+    text-decoration: none;
+    color: #d0ff25;
+    transition: all 0.3s ease;
+}
+.bi-github {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.bi-github:hover {
+    text-decoration: none;
+    color: #d0ff25;
+    transition: all 0.3s ease;
+}
+.bi-instagram {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.bi-instagram:hover {
+    text-decoration: none;
+    color: #d0ff25;
+    transition: all 0.3s ease;
+}
+@media(min-width: 768px) {
+    #slider .carousel-caption {
+        bottom: 15em;
+    }
+    #slider .btn {
+        padding: 0.7 1.8em;
+        font-size: 1.2em;
+    }
+    .carousel-indicators {
+        bottom: 7em;
+    }
+}
+
+@media(max-width: 990px) {
+    #slider .carousel-caption h5 {
+        font-size:  1.5em;
+    }
+    .carousel-inner {
+        height: 25rem;
+    }
+    .carousel-item {
+        height: 100%;
+    }
+    #slider .carousel-caption {
+        bottom: 7rem;
+    }
+    .about p {
+        font-size: 1.5em;
+    }
+    .img-perfil {
+        display: flex;
+        max-width: 40%;
+        margin: auto;
+    }
+    .btn btn-dark {
+        display: flex;
+        justify-content: center;
+        margin-top: 2em;
+    }
+    .hard .HSkills-content .right span {
+        font-size: 0.9rem;
+        margin-top: 0.3rem;
+    }
+    #projects-column {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .col-sd-12 {
+        width: 100%;
+    }
+}
+@media (min-width: 992px){
+.col-lg-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 50%;
+}
+}
