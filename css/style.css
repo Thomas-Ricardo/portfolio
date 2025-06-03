@@ -325,6 +325,9 @@
 .HSkills-content .right .react::before{
     width: 40%;
 }
+.HSkills-content .right .next::before{
+    width: 40%;
+}
 .HSkills-content .right .node::before{
     width: 20%;
 }
